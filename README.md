@@ -141,8 +141,8 @@ You can deploy this app to:
 
 ## 🙌 Credits
 
-Created by [Vetrivel Ravi](https://youtube.com/@vetrivelravi)  
-YouTube: [Vetrivel Ravi](https://youtube.com/@vetrivelravi)
+Created by Manish Jangid 
+by taking some idea through the viterivel ravi video
 
 ---
 
