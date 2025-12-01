@@ -12,8 +12,6 @@
 [functions]
   node_bundler = "esbuild"
   external_node_modules = ["@prisma/client", "prisma"]
-  # Increase timeout for AI generation (default is 10s)
-  timeout = 300
 
 [[redirects]]
   from = "/api/*"
