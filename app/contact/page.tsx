@@ -6,7 +6,7 @@ import { ContactForm } from "./_components/contact-form";
 export default function ContactPage() {
   return (
     <Container className="space-y-8 py-8">
-      <CustomBreadCrump />
+      <CustomBreadCrump breadCrumpPage="Contact" />
       
       <div className="space-y-4 text-center">
         <h1 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">
