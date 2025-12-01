@@ -8,6 +8,8 @@
 [build.environment]
   NODE_VERSION = "20"
   NPM_FLAGS = "--legacy-peer-deps"
+  # Omit Clerk's public publishable key from secrets scanning (it's meant to be public)
+  SECRETS_SCAN_OMIT_KEYS = "NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY"
 
 [functions]
   node_bundler = "esbuild"
