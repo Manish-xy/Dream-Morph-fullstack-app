@@ -127,8 +127,8 @@ function ChartTooltipContent({
     indicator?: "line" | "dot" | "dashed"
     nameKey?: string
     labelKey?: string
-    labelFormatter?: (label: any) => string
-    formatter?: (value: any, name: any, item: any, index: number) => React.ReactNode
+    labelFormatter?: (value: any, payload: any[]) => string
+    formatter?: (value: any, name: any, item: any, index: number, payload: any) => React.ReactNode
     color?: string
     labelClassName?: string
   }) {
@@ -199,7 +199,7 @@ function ChartTooltipContent({
               )}
             >
               {formatter && item?.value !== undefined && item.name ? (
-                formatter(item.value, item.name, item, index, item.payload)
+                formatter(item.value, item.name, item, index, item?.payload)
               ) : (
                 <>
                   {itemConfig?.icon ? (
